@@ -1,0 +1,25 @@
+GTA V x Minecraft crossover mod (built live by an AI agent on $MOD / SIGF)
+Based on rehan's Minecraft x GTA V passthrough (MIT, LICENSE-passthrough.txt):
+https://github.com/rehan-remade/universal-modder/tree/main/examples/minecraft-gta5-passthrough
+
+Story mode only. Never take a modded game into GTA Online.
+
+You need: GTA V Legacy (Steam or Rockstar, the build ScriptHookV supports), Minecraft Java 26.3 with Fabric Loader
+0.19.5+ and Fabric API 0.161.0+26.3 in a launcher profile with its own game directory.
+
+1. GTA folder (where GTA5.exe is):
+   - ScriptHookV + its ASI loader (dinput8.dll) and args.txt from https://www.dev-c.com/gtav/scripthookv/ (not
+     redistributable, get them there). args.txt keeps BattlEye off: story mode only.
+   - ReShade 6.8.0 WITH add-on support from https://reshade.me: copy ReShade64.dll into the GTA folder renamed
+     ReShade64.asi (GTA never loads a ReShade dxgi.dll from its folder).
+   - MCPassthrough.asi from this package into the GTA folder.
+   - MCPassthrough.fx into <GTA folder>\reshade-shaders\Shaders\, with ReShade.fxh and ReShadeUI.fxh from
+     https://github.com/crosire/reshade-shaders (slim branch).
+   - ReShadePreset.ini in the GTA folder with the line: Techniques=MCPassthrough@MCPassthrough.fx
+   - ReShade.ini [GENERAL]: PreprocessorDefinitions=RESHADE_DEPTH_INPUT_IS_REVERSED=1
+2. Minecraft: sigf-crossover-minecraft.jar into the profile's mods\ folder, next to Fabric API.
+3. GTA settings: windowed or borderless, "Pause game on focus loss" off.
+4. Start Minecraft (that profile; leave its window open, not minimized), then GTA V, pick Story Mode.
+   "Minecraft passthrough connected" shows in GTA. F7 toggles it, F8 re-levels the Minecraft ground.
+
+To remove: delete the files you added to the GTA folder.

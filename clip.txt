@@ -1,0 +1,5 @@
+Clip moments (the demo plays them in this order):
+1. [x] Within 5 s a Minecraft pig pen, creeper wall, oak house and emerald blocks rise out of a Los Santos street.
+2. [x] Minecraft zombies and creepers hunt GTA pedestrians; the dead rise again as zombies.
+3. [x] A GTA supercar is blown up: its wreck lights Minecraft TNT, which explodes as a real GTA blast.
+4. [x] Steve walks through the street to the emerald blocks (GTA money bags) with the house and zombies around him.

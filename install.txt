@@ -1,0 +1,1 @@
+Needs GTA V (story mode, offline only) with ScriptHookV and ReShade, plus Minecraft Java with Fabric. Copy the mod's GTA files into the GTA folder and its Minecraft jar into the mods folder, start both games, load story mode, and walk around Los Santos.
